@@ -49,6 +49,12 @@ serverSocket.bind((HOST, PORT))
 - `0.0.0.0`: Lyt på alle lokale IPv4-interfaces. Andre computere bruger servercomputerens faktiske IP-adresse, fx `http://192.168.1.10:7913/`, hvis netværk og firewall tillader det.
 - En bestemt lokal IP-adresse: Lyt kun på den adresse. Adressen skal være tildelt servercomputeren.
 
+## Licens
+
+Copyright 2026 Ib Helmer Nielsen.
+
+Projektet er udgivet under [Apache License 2.0](LICENSE).
+
 ## Begrænsninger
 
 Koden har ingen beskyttelse mod filstier som `../`, så filer uden for webmappen kan læses. Tomme eller delvise forespørgsler kan stoppe serveren, og en klient uden data kan blokere den, fordi der mangler timeout. Brug derfor eksemplet lokalt til læring; det er ikke egnet til offentlig drift i sin nuværende form.
